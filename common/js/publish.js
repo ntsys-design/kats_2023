@@ -183,3 +183,16 @@ $('.lnb>li>a').on('click',function(e){
 
   });
 
+// 01/17 gnbMenu
+
+$(function(){
+  $('.menu_open').on('click',function(){
+  console.log('ddd')
+$('.gnbMenu').stop().show()
+$('body').css({'overflow' : 'hidden'})
+})
+$('.menu_close').on('click',function(){
+$('.gnbMenu').stop().hide()
+$('body').css({'overflow' : 'scroll'})
+})
+})

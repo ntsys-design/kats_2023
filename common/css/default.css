@@ -2066,3 +2066,77 @@ input, select, textarea {
 .chk_inp > li input[type="checkbox"]:checked {
   background-image: url("../images/chk_on.jpg");
 }
+
+/*01/17  gnbMenu */
+.gnbMenu{width: 100%;height: 100vh; background: #fff;position: absolute;top: 0;;left: 0;z-index: 100;display: none;overflow-y: auto;}
+.gnbMenu_hd{height: 100px;position: relative;max-width: 1820px;margin: auto;
+border-bottom: 1px solid #eee;}
+.gnbMenu_logo{display: flex; align-items: center;justify-content: center;height: 100%;}
+.gnbMenu_logo a{display: flex;
+  align-items: center;
+  height: 50px;
+  width: 250px;
+  padding-left: 40px;
+  background: url(../images/logo.png) no-repeat left;
+  color: #555;
+  font-size: 22px;
+  letter-spacing: -2px;
+  font-family: "Gwangju";
+}
+.menu_close{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  vertical-align: middle;
+  width: 33px;
+  margin-right: 20px;
+  background: url(../images/menu_close.png) no-repeat center right;
+  background-size: auto 28px;
+  height: 60px;
+
+
+}
+
+.gnbMenu nav{width: 100%;;}
+.gnbMenu nav ul.dep1{margin: 20px 0 60px; }
+.dep1>li>a{display: block; font-size: 22px;padding: 10px;font-weight: 600;border-bottom: 2px solid #000;}
+.dep1 .dep2{display: flex;padding: 20px 0; }
+.dep2 >li{width: 33%;;   margin:0 10px;
+}
+.dep2 >li>a{font-size: 17px;
+   border: 1px solid #dedede;
+   padding: 10px;
+   text-align: center;
+}
+.dep2 >li:hover>a{
+  border: 1px solid #3d8fff;
+  color:#3d8fff ;
+}
+.dep3>li{margin: 10px 20px;}
+
+.dep3>li>a{font-size: 16px; padding: 5px 3px;}
+.dep3>li:hover>a{color: #3d8fff;}
+.dep4>li{margin:5px 15px;position: relative;}
+.dep4>li>a{font-size: 14px;}
+.dep4>li:hover>a{text-decoration: underline;}
+.dep4>li:before{position: absolute;
+  left: -7px;
+  top:50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: #ccc;
+  border-radius: 4px;
+  content: '';
+}
+.dep4>li:hover:before{position: absolute;
+  left: -7px;
+  top:50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 4px;
+  content: '';
+}
