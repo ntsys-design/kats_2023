@@ -2140,3 +2140,31 @@ border-bottom: 1px solid #eee;}
   border-radius: 4px;
   content: '';
 }
+
+/* 0118 로그인 */
+.mems_form input{border: 1px solid #eee;
+width: 300px;height: 40px;margin: 10px 0;border-radius: 5px;}
+.mems_form input.in{
+  font-family: "On Mobile"; font-weight: 500;
+}
+::placeholder { 
+  font-family: "Noto Sans"; 
+  font-weight:400;
+  opacity: 1; 
+} 
+.mems_form input[type=button]{cursor: pointer;}
+
+/* 0118 헤더 로그인 아이콘 추가 */
+#header .line .state{display: flex; align-items: center; width: 85px;height: 100px;justify-content: space-between;margin-right: 10px;}
+#header .line .state{top: 0;}
+#header .line .state .menu_open{width: 30px;height: 30px;margin-right: 10px;position: static;}
+#header .line .state .menu_open a{width: 30px;height: 30px;}
+.hd_login{width: 25px;height: 25px;}
+.hd_login a{
+  width: 100%;height: 100%;
+  background: url(../images/ico_login.png)no-repeat center;
+background-size: 100%;
+}
+#header .top_bg.active .state .hd_login a{
+  background: url(../images/ico_login_hover.png)no-repeat center;
+}
